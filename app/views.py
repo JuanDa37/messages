@@ -69,5 +69,5 @@ def get_author_by_username(request, username):
 
     if serializer.is_valid():
         serializer.save()
-        return Response(serializer.data, status = status.HTTP_200_0K)
+        return Response(serializer.data, status = status.HTTP_200_OK)
     return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
