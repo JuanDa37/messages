@@ -87,13 +87,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'BOwvRiyexGzCzTonhxvDZUCJUhAQSnvA',
-        'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '52310',
+        'PASSWORD': 'qTcKCthKTSSrSUfJIaLUlhgcOxFUkZoT',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '58763',
     }
 }
 #postgresql://postgres:TEgxpoOtEpJgqbmkwPESUmmxvyTVfDct@autorack.proxy.rlwy.net:26523/railway
 #postgresql://postgres:BOwvRiyexGzCzTonhxvDZUCJUhAQSnvA@autorack.proxy.rlwy.net:52310/railway
+#postgresql://postgres:qTcKCthKTSSrSUfJIaLUlhgcOxFUkZoT@junction.proxy.rlwy.net:58763/railway
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -130,6 +131,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 #STATIC_URL = 'static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
